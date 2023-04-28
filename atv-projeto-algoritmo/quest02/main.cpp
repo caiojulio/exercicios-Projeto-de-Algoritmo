@@ -44,16 +44,11 @@ int verificaPadCad(char *cadeia, char *padrao){
 		padraoTam++; 
 	}
 
-    cout << padraoTam << endl;
-    cout << "Funcionando - 2 " << endl;
-
     for ( int y = 0; cadeia[y] != '\0'; y++ ){
 
         if (cadeia[y] == padrao[0]){
         	
            int x = y;	//para comecar de onde o i parou e nao manipular o i
-
-           cout << "Funcionando - 3 " << endl;
            int k = 0;
 
            for ( k ;  k < padraoTam ; k++ ){
@@ -64,9 +59,6 @@ int verificaPadCad(char *cadeia, char *padrao){
 		   }
 
            subCad[k] = '\0';
-
-           cout << "Funcionando - 4 " << endl;
-           cout << subCad << endl;
 		   
 			if ( comparar(subCad, padrao) == 0 ){
 				contadorOcorrencia++;
@@ -76,8 +68,6 @@ int verificaPadCad(char *cadeia, char *padrao){
         
         }
     }
-
-    cout << "Funcionando - 5 " << endl;
     
     return contadorOcorrencia;
 
@@ -95,14 +85,14 @@ int main(){
     cin.ignore();
     cin.get(padrao, 81);
 
-    cout << "Cadeia: " << cadeia << endl;
+    cout << "\nCadeia: " << cadeia << endl;
     cout << "Padrao: " << padrao << endl;
 
     int ocorrencia = verificaPadCad(cadeia, padrao);
     
     if (ocorrencia > 0){
 
-    	 cout << "Existe o padrao: " << padrao << " na cadeia: " << cadeia << endl;
+    	 cout << "\nExiste o padrao: " << padrao << " na cadeia: " << cadeia << endl;
     	 cout << "Existem " << ocorrencia << " ocorrencias de: " << padrao << " na cadeia: " << cadeia << endl;
 
 	} else {

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/caioj/Downloads/analisaQuestt/analisaQuest",
-      "program": "c:/Users/caioj/Downloads/analisaQuestt/analisaQuest/build/Debug/outDebug",
+      "cwd": "c:/Users/caioj/Downloads/atvProjAlgoritmo/exercicios-Projeto-de-Algoritmo/atv-projeto-algoritmo/quest02",
+      "program": "c:/Users/caioj/Downloads/atvProjAlgoritmo/exercicios-Projeto-de-Algoritmo/atv-projeto-algoritmo/quest02/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
